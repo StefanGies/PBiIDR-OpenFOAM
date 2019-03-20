@@ -1,0 +1,4 @@
+idrsSolver.C
+
+
+EXE = $(FOAM_LIBBIN)/idrsSolver

@@ -1,0 +1,2 @@
+biidrsSolver.C
+LIB = $(FOAM_LIBBIN)/biidrsSolver
