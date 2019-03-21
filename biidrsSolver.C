@@ -243,7 +243,7 @@ Foam::solverPerformance Foam::biidrsSolver::solve
     //  orthogonalisation of matrix P --> initial Shadow Space Space S in K_0 
     // might want to replace mod. Gram-Schmidt Procedure with sth more accurate
     label lk ;
-    double alpha = 0.0;
+    long double alpha = 0.0;
 
     for (lk = 1; lk < S; ++lk)
     {
@@ -393,8 +393,8 @@ Foam::solverPerformance Foam::biidrsSolver::solve
                 Foam::biidrsSolver::fieldfield2Eigen(Ms, ME, sysdim);
 
                 // use Eigen::SVD to solve small system c = Mu⁻¹*phi 
-                Eigen::JacobiSVD<Eigen::MatrixXd> 
-                    svd(ME,  Eigen::ComputeThinU | Eigen::ComputeThinV);
+                Eigen::BDCSVD<Eigen::MatrixXd> 
+                    svd(ME,  Eigen::ComputeFullU | Eigen::ComputeFullV);
                 cE = svd.solve(phisE);
 
                 // convert solution back to scalarField
