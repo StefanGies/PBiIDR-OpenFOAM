@@ -1,10 +1,5 @@
 /*---------------------------------------------------------------------------*\
-  =========                 |
-  \\      /  F ield         | foam-extend: Open Source CFD
-   \\    /   O peration     | Version:     4.0
-    \\  /    A nd           | Web:         http://www.foam-extend.org
-     \\/     M anipulation  | For copyright notice see file Copyright
--------------------------------------------------------------------------------
+
 Software designed to work with OpenFOAM-v1812
 Software not part of official OpenFoam - Release.
 
@@ -15,15 +10,10 @@ Description
 Author
     Stefan Gies TU-Braunschweig
 
-Solver is based on work by MARTIN B. VAN GIJZEN and PETER SONNEVELD, Delft University of Technology
+Solver is an implementation of work by MARTIN B. VAN GIJZEN and PETER SONNEVELD, Delft University of Technology
 "An Elegant IDR(s) Variant that Efficiently Exploits Biorthogonality Properties"
 
-!BEFORE COMPILATION!
-inlcude -$(CPP_DIRECTIVE) under EXE_INC in options makefile
-run
-> export CPP_DIRECTIVE='-std=c++11' 
-or add to as compiler option in ~/foam/foam-extend-4.0/etc/bashrc
-to enable c++11 compiler support
+
 \*---------------------------------------------------------------------------*/
 
 #include "biidrsSolver.H"
