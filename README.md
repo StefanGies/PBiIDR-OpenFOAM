@@ -3,5 +3,5 @@ Preconditioned biorthogonal IDR(s) Solver for OpenFoam (tested for versions v181
 
 
 
-Disclaimer
+Disclaimer:
 This software is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM® and OpenCFD® trade marks.
