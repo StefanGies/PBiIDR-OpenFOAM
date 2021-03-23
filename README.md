@@ -1,5 +1,5 @@
 # PBiIDR-OpenFOAM
-Preconditioned biorthogonal IDR(s) Solver for OpenFoam (tested for versions v1812 and v1912)i
+Preconditioned biorthogonal IDR(s) Solver for OpenFoam (tested for versions v1812, v1912 and v2012)i
 
 
 
