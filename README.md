@@ -16,8 +16,9 @@ Solver is an implementation of work by MARTIN B. VAN GIJZEN and PETER SONNEVELD,
 USAGE GUIDE:
 As with any other linear algebra solver in OpenFOAM the solver is called from the fvSolution dictionary
 Example:
+```
 U
-    {
+  {
       solver          PBiIDR;
       preconditioner  none;
       tolerance       1e-05;
@@ -26,8 +27,8 @@ U
       subSpace	      rand;   
       angle		        0.7;  
         resprint	      0;	  
-    }
-
+  }
+```
   sDimensions:  dimensionality of Sonneveld subspace
   subSpace:     first vector to build Sonneveld space with > span{r0/rand, rand, ..., rand}, choose 'r0' or 'rand'; if sDimension > 1 -> coloum vectors (full) random numbers (Gaussian) distribution
   angle:        adjustment of omega based on angle between prior residual and search direction; if angle == 0.0, omega is adjusted to minimise residual norm
