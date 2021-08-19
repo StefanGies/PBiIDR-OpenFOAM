@@ -20,12 +20,12 @@ Example:
 U
   {
       solver			PBiIDR;
-      preconditioner	none;
+      preconditioner	        none;
       tolerance			1e-05;
       relTol			0;
       sDimensions 		2;
       subSpace			rand;   
-      angle				0.7;  
+      angle			0.7;  
       resprint			0;	  
   }
 ```
