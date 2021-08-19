@@ -25,7 +25,7 @@ U
       sDimensions	    2;
       subSpace	      rand;   
       angle		        0.7;  
-      resprint	      0;	  
+        resprint	      0;	  
     }
 
   sDimensions:  dimensionality of Sonneveld subspace
