@@ -19,21 +19,22 @@ Example:
 ```
 U
   {
-      solver          PBiIDR;
-      preconditioner  none;
-      tolerance       1e-05;
-      relTol          0;
-      sDimensions	    2;
-      subSpace	      rand;   
-      angle		        0.7;  
-        resprint	      0;	  
+      solver			PBiIDR;
+      preconditioner	none;
+      tolerance			1e-05;
+      relTol			0;
+      sDimensions 		2;
+      subSpace			rand;   
+      angle				0.7;  
+      resprint			0;	  
   }
+```
 ```
   sDimensions:  dimensionality of Sonneveld subspace
   subSpace:     first vector to build Sonneveld space with > span{r0/rand, rand, ..., rand}, choose 'r0' or 'rand'; if sDimension > 1 -> coloum vectors (full) random numbers (Gaussian) distribution
   angle:        adjustment of omega based on angle between prior residual and search direction; if angle == 0.0, omega is adjusted to minimise residual norm
   resprint:     print residuals  at every internal iteration in std output (debugging only)
-
+```
 
 Disclaimer:
 This software is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM® and OpenCFD® trade marks.
